@@ -1,0 +1,27 @@
+# Core GUI Framework
+PyQt5==5.15.10
+PyQt5-sip==12.13.0
+pyqt5-stubs==5.15.6
+
+# System and Process Monitoring
+psutil==5.9.8
+
+# Static Analysis Engines
+yara-python==4.5.1
+lightgbm==4.3.0
+thrember==0.2.1
+
+# Dynamic & Network Analysis
+scapy==2.5.0
+pyqtgraph==0.13.4
+
+# Machine Learning & Data Handling
+joblib==1.4.0
+scikit-learn==1.4.2
+
+# Utilities & Database Updating
+requests==2.31.0
+GitPython==3.1.41
+
+# Windows-Specific Dependencies (for USB Monitoring)
+pywin32==306 ; sys_platform == 'win32'

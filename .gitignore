@@ -1,0 +1,84 @@
+# =====================================================
+# CyberGun — .gitignore
+# =====================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.spec
+
+# Virtual Environments
+venv/
+env/
+.venv/
+.env/
+
+# Large Compiled / Packaged Binaries
+*.exe
+*.pkg
+*.pyz
+*.msi
+Setup.exe
+installer.iss
+
+# ML Models (large — download separately or train locally)
+*.joblib
+models/*.joblib
+static_models/*.joblib
+
+# Large Threat Intelligence Databases (auto-downloaded at runtime)
+datasets/hashes/malware_hashes_sha256.txt
+datasets/hashes/malware_hashes_sha1.txt
+datasets/hashes/malware_hashes_md5.txt
+datasets/hashes/abuse_ch_full_sha256.txt
+datasets/hashes/abuse_ch_full_sha256.txt.tmp
+datasets/cybergun_intel.db
+datasets/cybergun_intel.db-shm
+datasets/cybergun_intel.db-wal
+*.db
+*.db-shm
+*.db-wal
+
+# YARA Rules (large — clone separately via git submodule)
+datasets/yara_rules/signature-base-master/
+datasets/yara_rules/signature-base/
+
+# Network Traffic Data (runtime-generated)
+datasets/network/inbound.txt
+datasets/network/outbound.txt
+
+# Quarantine Directory (runtime-generated, may contain malware)
+quarantine/
+*.quarantined
+
+# Logs (runtime-generated)
+*.log
+logs/
+system.log
+threats.log
+
+# Temp Files
+*.tmp
+*.bak
+*.swp
+*.psd
+
+# IDE / OS Files
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
+desktop.ini
+
+# Windows Memory Acquisition Tools
+go-winpmem*.exe
+
+# Reports (runtime-generated)
+reports/
