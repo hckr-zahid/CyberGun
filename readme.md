@@ -1,4 +1,3 @@
-markdown
 # CyberGun: Advanced Real-Time Threat Mitigation Suite
 
 <p align="center">
@@ -53,7 +52,7 @@ The system is designed primarily for Windows-based defensive security monitoring
 
 # Core Capabilities
 
-text
+```text
                          CYBERGUN
                             │
           ┌─────────────────┼─────────────────┐
@@ -83,6 +82,7 @@ text
                      THREAT MITIGATION
 
 
+```
 ---
 
 # Features
@@ -264,7 +264,7 @@ Threat intelligence can be updated during application startup or manually throug
 
 CyberGun follows a modular, decoupled architecture built around PyQt5 and signal-driven communication.
 
-text
+```text
 CyberGun/
 │
 ├── main.py
@@ -331,13 +331,14 @@ CyberGun/
 └── requirements.txt
 
 
+```
 ---
 
 # Security Detection Pipeline
 
 A simplified CyberGun detection workflow:
 
-text
+```text
                  SECURITY EVENT
                        │
           ┌────────────┼────────────┐
@@ -378,6 +379,7 @@ text
                 QUARANTINE   TERMINATION   ALERT
 
 
+```
 ---
 
 # Machine Learning
@@ -388,7 +390,7 @@ The project includes LightGBM-based static detection models.
 
 Model categories include:
 
-text
+```text
 models/
 └── static_models/
     ├── apk_model.lgbm
@@ -405,6 +407,7 @@ text
 EMBER2024/
 
 
+```
 ---
 
 # Behavioral ML Feature Set
@@ -485,30 +488,32 @@ Install Wireshark on the Windows system and ensure that the TShark executable is
 
 A typical TShark installation path may be:
 
-text
+```text
 C:\Program Files\Wireshark\tshark.exe
 
 
 The exact path depends on the local installation.
 
+```
 ---
 
 # Installation
 
 ## 1. Clone the Repository
 
-bash
+```bash
 git clone https://github.com/hckr-zahid/CyberGun.git
 cd CyberGun
 
 
+```
 ---
 
 ## 2. Create a Virtual Environment
 
 ### Windows
 
-powershell
+```powershell
 python -m venv venv
 
 
@@ -525,14 +530,16 @@ python3 -m venv venv
 source venv/bin/activate
 
 
+```
 ---
 
 ## 3. Install Dependencies
 
-bash
+```bash
 pip install -r requirements.txt
 
 
+```
 ---
 
 # YARA Rules Installation
@@ -545,7 +552,7 @@ signature-base
 
 Clone the ruleset into the CyberGun YARA rules directory:
 
-bash
+```bash
 cd datasets/yara_rules
 
 git clone https://github.com/Neo23x0/signature-base.git signature-base-master
@@ -559,6 +566,7 @@ text
 datasets/yara_rules/
 
 
+```
 ---
 
 # Threat Intelligence Databases
@@ -567,7 +575,7 @@ CyberGun can automatically download threat intelligence datasets during startup.
 
 These include:
 
-text
+```text
 Abuse.ch MalwareBazaar
         │
         ▼
@@ -597,13 +605,14 @@ signature-base
 
 Threat intelligence can also be updated manually from the CyberGun dashboard.
 
+```
 ---
 
 # Running CyberGun
 
 Start CyberGun with:
 
-bash
+```bash
 python main.py
 
 
@@ -620,6 +629,7 @@ The startup process may include:
 7. Network monitoring initialization
 8. Main dashboard launch
 
+```
 ---
 
 # Main Security Engines
@@ -628,7 +638,7 @@ The startup process may include:
 
 The Static Engine manages file-based security scanners.
 
-text
+```text
 StaticEngine
 │
 ├── HashDetector
@@ -638,13 +648,14 @@ StaticEngine
 └── MLDetector
 
 
+```
 ---
 
 ## Dynamic Engine
 
 The Dynamic Engine manages real-time system monitoring.
 
-text
+```text
 DynamicEngine
 │
 ├── BehaviorMonitor
@@ -655,13 +666,14 @@ DynamicEngine
 └── ApiTraceManager
 
 
+```
 ---
 
 ## Network Engine
 
 The Network Engine manages network security analysis.
 
-text
+```text
 NetworkEngine
 │
 ├── NetworkAnalyzer
@@ -671,13 +683,14 @@ NetworkEngine
 └── TSharkSniffer
 
 
+```
 ---
 
 # Threat Response Workflow
 
 When CyberGun identifies a potentially malicious event, the system can follow a defensive response workflow:
 
-text
+```text
 Detection
     │
     ▼
@@ -704,6 +717,7 @@ Logging       Threat Response
               Security Log
 
 
+```
 ---
 
 # Project Directory Reference
@@ -764,7 +778,7 @@ These sources are used to enhance CyberGun's detection and correlation capabilit
 
 CyberGun follows a layered defensive approach:
 
-text
+```text
                  PREVENT
                     │
                     ▼
@@ -791,6 +805,7 @@ text
 
 Rather than depending on a single detection mechanism, CyberGun combines multiple security techniques to improve visibility and defensive response.
 
+```
 ---
 
 # Development
